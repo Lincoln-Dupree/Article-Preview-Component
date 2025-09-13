@@ -1,6 +1,9 @@
 const shareBtn = document.querySelector(".share-btn");
 const popUp = document.querySelector(".share-popup-container");
 const shareIcon = document.querySelector(".share-img");
+const footer = document.querySelector(".footer");
+const mobileFooter = document.querySelector(".mobile-footer")
+const mobileShareButton = document.querySelector(".share-btn-mobile")
 
 shareBtn.addEventListener('click', function () {
     popUp.classList.toggle("show-me");
@@ -13,3 +16,13 @@ shareBtn.addEventListener('mousedown', function () {
 shareBtn.addEventListener('mouseup', function () {
     shareIcon.src = 'images/icon-share.svg';
 })
+
+
+
+
+if (window.matchMedia("(max-width: 578px)")) {
+    shareBtn.addEventListener('click', function () {
+
+    })
+}
+

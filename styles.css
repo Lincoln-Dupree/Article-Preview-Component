@@ -14,7 +14,7 @@
 }
 
 html {
-  font-size: clamp(12px, 0.9vw, 18px);
+  font-size: clamp(10px, 0.9vw, 18px);
   font-family: "Manrope", sans-serif;
   font-weight: 500;
 }
@@ -115,7 +115,6 @@ body {
   border-radius: 50%;
   padding: 0.5rem;
   background-color: var(--Light-Grayish-Blue);
-  color: red;
 }
 
 .share-btn:active {
@@ -153,10 +152,113 @@ body {
   border-top: 1rem solid var(--Dark-Grayish-Blue);
 }
 
+.mobile-footer {
+  display: none;
+}
+
 .show-me {
   display: block;
 }
 
 .hide-me {
   display: none;
+}
+
+/* MOBILE STYLING */
+
+@media screen and (max-width: 578px) {
+  .main-container {
+    position: relative;
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0rem 2rem 4rem lightgray;
+
+    .big-img-container {
+      /* background-color: aquamarine; */
+      width: 100%;
+      height: 40%;
+    }
+
+    .drawer-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 1rem 1rem 0rem 0rem;
+    }
+
+    .text-container {
+      /* background-color: darkorchid; */
+      width: 100%;
+      height: 100%;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .text-header {
+      font-size: 1.5rem;
+      color: var(--Dark-Grayish-Blue);
+      font-weight: 700;
+    }
+
+    .text-para {
+      padding-top: 2rem;
+      color: var(--Desaturated-Dark-Blue);
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 2rem;
+    }
+
+    .share-btn {
+      border: none;
+      border-radius: 50%;
+      padding: 0.5rem;
+      background-color: var(--Light-Grayish-Blue);
+    }
+
+    .share-btn:active {
+      background-color: var(--Dark-Grayish-Blue);
+      color: var(--White);
+    }
+
+    .share-btn-mobile {
+      border: none;
+      border-radius: 50%;
+      padding: 0.5rem;
+      background-color: var(--Desaturated-Dark-Blue);
+    }
+
+    .share-popup-container {
+      display: none;
+    }
+
+    .mobile-footer {
+      display: none;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: auto;
+      padding: 1.5rem;
+      border-radius: 0rem 0rem 1rem 1rem;
+      background-color: var(--Dark-Grayish-Blue);
+      color: var(--White);
+    }
+
+    .share-links-mobile {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+  }
 }
