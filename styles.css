@@ -1,0 +1,117 @@
+:root {
+  --Dark-Grayish-Blue: hsl(217, 19%, 35%);
+  --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+  --Grayish-Blue: hsl(212, 23%, 69%);
+  --Light-Grayish-Blue: hsl(210, 46%, 95%);
+  --White: hsl(0, 0%, 98%);
+  /* Weights: 500, 700 */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 13px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 100vh;
+  height: 100dvh;
+  background-color: var(--Light-Grayish-Blue);
+}
+
+.main-container {
+  background-color: var(--White);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56rem;
+  height: 22rem;
+  border-radius: 1rem;
+  box-shadow: 0rem 2rem 4rem lightgray;
+}
+
+.big-img-container {
+  /* background-color: aquamarine; */
+  width: 40%;
+  height: 100%;
+}
+
+.drawer-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem 0rem 0rem 1rem;
+}
+
+.text-container {
+  /* background-color: darkorchid; */
+  width: 60%;
+  height: 100%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text-header {
+  font-size: 1.5rem;
+  color: var(--Dark-Grayish-Blue);
+  font-weight: 700;
+}
+
+.text-para {
+  padding-top: 2rem;
+  color: var(--Desaturated-Dark-Blue);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.author-container {
+  /* background-color: coral; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.author-img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  margin-right: 1.25rem;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.author-name {
+  color: var(--Dark-Grayish-Blue);
+  font-weight: 700;
+}
+
+.pub-date {
+  font-size: 1rem;
+  color: var(--Grayish-Blue);
+}
+
+.share-btn {
+  border: none;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
