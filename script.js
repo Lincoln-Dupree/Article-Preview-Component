@@ -5,6 +5,10 @@ const footer = document.querySelector(".footer");
 const mobileFooter = document.querySelector(".mobile-footer")
 const mobileShareButton = document.querySelector(".share-btn-mobile")
 
+window.addEventListener("resize", function () {
+    location.reload();
+})
+
 shareBtn.addEventListener('click', function () {
     popUp.classList.toggle("show-me");
 })
