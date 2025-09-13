@@ -6,7 +6,9 @@ const mobileFooter = document.querySelector(".mobile-footer")
 const mobileShareButton = document.querySelector(".share-btn-mobile")
 
 window.addEventListener("resize", function () {
-    location.reload();
+    setTimeout(function () {
+        location.reload()
+    }, 1000);
 })
 
 shareBtn.addEventListener('click', function () {
