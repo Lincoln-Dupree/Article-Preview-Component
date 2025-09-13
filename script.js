@@ -17,7 +17,7 @@ shareBtn.addEventListener('mouseup', function () {
     shareIcon.src = 'images/icon-share.svg';
 })
 
-if (window.matchMedia("(max-width: 578px)")) {
+if (window.matchMedia("(max-width: 578px)").matches) {
     shareBtn.addEventListener('click', function () {
         footer.style.display = 'none';
         mobileFooter.style.display = 'flex';
