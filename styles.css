@@ -30,6 +30,7 @@ body {
 }
 
 .main-container {
+  position: relative;
   background-color: var(--White);
   display: flex;
   justify-content: center;
@@ -113,4 +114,42 @@ body {
   border: none;
   border-radius: 50%;
   padding: 0.5rem;
+}
+
+.share-btn:active {
+  transform: scale(125%);
+}
+
+.share-popup-container {
+  display: none;
+}
+
+.show-me {
+  display: block;
+}
+
+.popup {
+  position: absolute;
+  right: -3.5rem;
+  bottom: 7.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--Dark-Grayish-Blue);
+  color: var(--Grayish-Blue);
+  letter-spacing: 0.25rem;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+
+.popup-triangle {
+  position: absolute;
+  right: 3.125rem;
+  bottom: 6.6rem;
+  width: 0;
+  height: 0;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-top: 1rem solid var(--Dark-Grayish-Blue);
 }
